@@ -3,38 +3,6 @@ languageCode = 'en-us'
 title = 'Arduous'
 theme = "color-your-world"
 
-enableEmoji = true
-enableInlineShortcodes = true
-
-paginate = 3
-
-[outputs]
-  home    = [ "HTML", "RSS", "HEADERS", "REDIRECTS" ]
-  section = [ "HTML", "RSS" ]
-
-[mediaTypes."text/netlify"]
-  suffixes  = [ "" ]
-  delimiter = ""
-
-[outputFormats.HEADERS]
-  mediaType       = "text/netlify"
-  baseName        = "_headers"
-  isPlainText     = true
-  notAlternative  = true
-
-# Necessary for i18n sites, so the correct 404 page can be rendered
-[outputFormats.REDIRECTS]
-  mediaType       = "text/netlify"
-  baseName        = "_redirects"
-  isPlainText     = true
-  notAlternative  = true
-
-
-[markup.highlight]
-  # To make use of the custom Chroma, this should be false
-  # The default is true
-  noClasses = false
-
 [params]
   # Site description
   description = "Layta's blogging website"
@@ -43,44 +11,13 @@ paginate = 3
   author      = "Layta"
   authorDesc  = "Website for all my writeups, explanations and meowing!"
   
-  # Footer text
-  # Each value will become a paragraph
-  # Keep it as an array
   footerText = [ "Website for all of my writeups, explanations, and fun stuff" ]  
   
-  # Site cover, for Open Graph, Twitter Cards and Schema.org
-  # It will be used if the current page doesn't have a image cover
-  # File will be picked from the "assets" directory
-  # Comment the lines if you don't want to use it
-  #cover     = "img/cover.jpg"
-  #coverAlt  = "A placeholder that doesn't deserve to be described."
-  
-  # Shows a message in the footer about JavaScript being disabled
-  # The default is false
   hasNoscriptNotice = true
-  
-  # Default path for images in posts
-  # ie.: "content/some-post/img"
-  # Can also be set PER PAGE
-  # It can be used to reduce repetition
-  # There's no default value
+
   imgPath = "static/avatar.ico"
-  
-  # Default classes for markup image 
-  # Modifies the default behavior of images placed via markdown
-  # Can also be set PER PAGE via front matter
-  # Available classes are: border and borderless
-  # There's no default value
-  markupImgClass = ""
-  
-  # This will append a separator (of your choice) along the site title to your <title>
-  # ie.: | ❚ - – — • ⚫ 
-  # You can disabled it PER PAGE by using "disableTitleSeparator" at front
-  # matter or disable it entirely by commenting the line below
-  titleSeparator = "|"
 
   [params.search]
-  
     # Enable search form (at the post list)
     # The default value is false
     enable = true
@@ -98,7 +35,6 @@ paginate = 3
     
 
   [params.style]
-  
     # Dark mode as default
     # User preferences (site/system settings) will still have priority over it
     # The default is false
@@ -143,24 +79,19 @@ paginate = 3
   # For a simple 404
   [params.notFound]
     title         = "Page not found"
-    description   = "This page was not found."
-    paragraph     = "Valid paths are: /posts/ and /contacts/"
+    description   = "This page was not found!"
+    paragraph     = "Valid paths are: /posts/ and /contacts/!"
     
   [params.social.centralized]
     # entry         = [ "username", "label (optional)" ]
-
-    github = ["<llayta>", "My github"]
-    
     # The "entry" here IS important. It's used to load the data.
-
   [params.social.decentralized]    
     
 [languages]
-
   [languages.en]
-  
+   
     languageName = "English"
-
+    
     [languages.en.menu]
 
       [[languages.en.menu.main]]
@@ -172,10 +103,8 @@ paginate = 3
         name = "Posts"
         weight = 2
         url = "posts/"
-      
+
       [[languages.en.menu.main]]
-        name = "Contact"
+        name = "Resources"
         weight = 3
-        url = "contact/"
-
-
+        url = "Resource/"
