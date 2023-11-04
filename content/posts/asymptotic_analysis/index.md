@@ -1,6 +1,6 @@
 ---
 title       : "Asymptotic analysis"
-description : "Brief overview on asymptotic notations for describing algorithms"
+description : "Brief overview on asymptotic notations for describing algorithm growth"
 toc         : true
 katex       : true
 tags        : [Algorithms, CS, CS theory]
