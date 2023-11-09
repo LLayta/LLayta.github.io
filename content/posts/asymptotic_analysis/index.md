@@ -6,6 +6,7 @@ katex       : true
 tags        : [Algorithms, CS, CS theory]
 ---
 
+## Introduction
 This is a beginners introduction to learning about computer science applications of asymptotic analysis. As you'll come to see I leave out more complex topics that are still vital to understand, but are not vital to understanding the rudimentals of it. I specifically left out masters theorem and recurrence relations for calculating work functions for DAQ algorithms and recursive algorithms. In the examples we won't even use recurrence relations, the examples will be so simple that we can visually see what the work function would look like.  
 
 ## Preliminary info
