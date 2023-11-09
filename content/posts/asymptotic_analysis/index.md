@@ -116,11 +116,11 @@ Bubble sort runs in $O(n^2)$.
 ### Example 2 analysis
 So we're going to model a function $T(n) = n^2$ to represent the work of our algorithn. The reason for it's $n^2$ is because the outer loop runs $n$ times and the inner loop runs $n$ times thus collasping to $n^2$.
 
-Let's visually prove that $T(n) = O(f(x)) \text{ s.t } f(x) = x^2$.
+Let's visually prove that $T(n) = O(f(n)) \text{ s.t } f(n) = n^2$.
 
 ![Example_2_graph](imgs/example_2_graph.png)
 
-As we can see 
+As we can see, the 2 functions' graph seem to overlap, thus meaning that $T(n) = O(f(n))$ is true for this example.
 
 ### Example 3
 Let's now analyze a contrived algorithm that consists of 2 loops, but isn't $O(n^2)$.
@@ -146,7 +146,7 @@ From our previous graph we noticed that the actual complexity was $O(n)$ instead
 If we recall from a previous section, we say that an algorithm's time complexity doesn't mean it's faster or slower than another algorithms time complexity. This is because constants matter in the context that we're measuring speed. However, we're not measuring speed instead we are measuring growth over large inputs.
 
 ### Conclusion
-I have a confession to make. All of my examples are misleading, I am giving a tight bound equation for the algorithms. This makes it harder to visualize the "upper" bounding part of big O. We can sort of think of big O as a way of describing a set of upper bounding functions in relation to some work function. Bubble sort can be upper bounded by: $O(n^3)$, $O(n^4)$, and tons of other functions. We go over tight bounding and what we should actual use later on in the article.
+I have a confession to make. All of my examples are misleading, I am giving a tight bound equation for the algorithms. This makes it harder to visualize the "upper" bounding part of big O. We can sort of think of big O as a way of describing a set of upper bounding functions in relation to some work function. Bubble sort can be upper bounded by any polynomial function in the form: $O(n^c)$ such that $c > 2$, and any other function that grows faster than a quadratic. We go over tight bounding and what we should actual use later on in the article.
 
 In summary, we utilize big O notation for describing the upper bounding behavior of an algorithm. This can be used to approximate but not precisely describe the worst case scenario for an algorithm.
 
