@@ -7,15 +7,15 @@ tags        : [Algorithms, CS, CS theory]
 ---
 
 ## Introduction
-This is a beginners introduction to learning about CS applications of asymptotic analysis. As you'll come to see, I leave out more complex topics, but are not vital to understanding the rudimentals of asymptotic analysis. I specifically left out masters theorem for calculating work functions for DAQ algorithms and recursive algorithms. In the examples we won't use recurrence relations, the examples will be so simple that we can visually see what the work function would look like.
+This is a beginners introduction to learning about CS applications of asymptotic analysis. As you'll come to see, I leave out more complex topics, but are not vital to understanding the rudimentals of asymptotic analysis. I specifically left out masters theorem for calculating work functions for DAQ algorithms and recursive algorithms. In the examples, we won't use recurrence relations, the examples will be so simple that we can visually see what the work function would look like.
 
 ## Preliminary info
-I'm going to assume you know some basic level of algebra to the point that you understand what functions. You might need some introductionary calculus for limits and function growth / decay.
+I'm going to assume you know some basic level of algebra, to the point that you understand what functions are. You might need some introductionary calculus for limits and function growth.
 
 Here are some things you should know before jumping into this: 
 
-* iff - If and only if.
-* Algorithm - Some set of steps utilized to solve a problem or task. In this post we'll model the work an algorithm does as a function known as "T(n)".
+* iff - If and only if. Further explanation here: https://www.youtube.com/watch?v=OK-ZAbcmmg0
+* Algorithm - Some set of steps utilized to solve a problem or task. In this post we'll model the work an algorithm does as a function known as $T(n)$.
 * Limits - Are concept that describes how functions inputs approach an output. Approach here means it describes the points that lead to the output, but not actually describing the output itself. Limits look like this:
     $\lim_{x \to \infty}(x + 1)$.
     This describes how $x$ approaches $x + 1$.
@@ -26,7 +26,7 @@ Here are some things you should know before jumping into this:
 Asymptotic analysis is analyzing an algorithm's behavior as we give it really large inputs; we only care about really large inputs in CS. We analyze the behavior by converting the algorithms work into a function that I call a "work function" or $T(n)$.
 
 ## Why does this matter to programmers?
-Understanding how to use these notations and their differences is because it allows us to model how algorithms' performance scales with large inputs. This is primarily useful for software engineers or systems engineers that deal with a large amount of data.
+Understanding how to use these notations, and their differences is because it allows us to model how algorithms' performance scales with large inputs. This is primarily useful for software engineers or systems engineers that deal with a large amount of data.
 
 Heavy emphasis on the "**how algorithms' scale at large inputs**" part from our previous paragraph. These notations do **NOT** describe how fast the algorithms are, it strictly describes how they grow given large inputs. Just because an algorithm has a faster or slower time complexity than another, doesn't mean it's faster or slower.
 
