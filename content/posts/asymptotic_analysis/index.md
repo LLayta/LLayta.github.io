@@ -6,8 +6,10 @@ katex       : true
 tags        : [Algorithms, CS, CS theory]
 ---
 
+This is a beginners introduction to learning about computer science applications of asymptotic analysis. As you'll come to see I leave out more complex topics that are still vital to understand, but are not vital to understanding the rudimentals of it. I specifically left out masters theorem and recurrence relations for calculating work functions for DAQ algorithms and recursive algorithms. In the examples we won't even use recurrence relations, the examples will be so simple that we can visually see what the work function would look like.  
+
 ## Preliminary info
-I'm going to assume you know some basic level of algebra to the point that you understand what functions. Maybe some introduction calculus with the concept of function growth but that's pretty conceptually easy.
+I'm going to assume you know some basic level of algebra to the point that you understand what functions. You might need some introductionary calculus for limits and function growth / decay.
 
 Here are some things you should know before jumping into this: 
 
@@ -16,7 +18,7 @@ Here are some things you should know before jumping into this:
 * Limits - Are concept that describes how functions inputs approach an output. Approach here means it describes the points that lead to the output, but not actually describing the output itself. Limits look like this:
     $\lim_{x \to \infty}(x + 1)$.
     This describes how $x$ approaches $x + 1$.
-* Bounding functions - Are functions that cover the region above or below another graph. This "bounds" or "covers" the graph of the function. For example the function: $f(x) = x ^ 2$ is an upper bounding function to the function $g(x) = y$ because $f(x)$ grows faster than $g(x)$.
+* Bounding functions - Are functions that cover the region above or below another functions graph. For example the function: $f(x) = x ^ 2$ is an upper bounding function to the function $g(x) = y$ because $f(x)$ grows faster than $g(x)$.
 * Asymptotic behavior - Is the behavior of some function $f(x)$ as it experiences limiting behavior. Limiting behavior (also known as tail / end behavior) is the behavior of a function as we give it either really large inputs or really small inputs.
 
 ## What's asymptotic analysis (in CS)?
@@ -28,7 +30,7 @@ Understanding how to use these notations and their differences is because it all
 Heavy emphasis on the "**how algorithms' scale at large inputs**" part from our previous paragraph. These notations do **NOT** describe how fast the algorithms are, it strictly describes how they grow given large inputs. Just because an algorithm has a faster or slower time complexity than another, doesn't mean it's faster or slower.
 
 ## Big O notation
-Big O notation is what we utilize when we want to describe an upper bounding function to our algorithms work (which is T(n)). We do this so we can approximate the worse case scenario of an algorithm. Let's formally define our big O function.
+Big O notation is what we utilize when we want to describe an upper bounding function to our algorithms work (which is $T(n)$). We do this so we can approximate the worse case scenario of an algorithm. Let's formally define our big O function.
 
 ### Formal definition
 let $k$, $n$ = some positive natural number
@@ -43,9 +45,9 @@ $\text{ as } n \to \infty$
 *What even is that?* Lets go over this equation. It basically says $T(n)$ is upper bounded by $f(n)$ if and only if the range of $f(n) * K$ is larger than or equal to the range of $T(n)$ after the $n_0th$ value as $n$ approaches infinity. 
 
 ### Examples of upper bounding functions
-Let's visualize what upper bounding looks like. We'll define our T(n) to be an identity function $T(n) = n$.
+Let's visualize what upper bounding looks like. We'll define our $T(n)$ to be an identity function $T(n) = n$.
 
-There are **tons** of different functions we can choose from that we can try upper bounding our $T(n) function$. Some of these include:
+There are **tons** of different functions we can choose from that we can try upper bounding our $T(n)$ functions. Some of these include:
 * $f(n) = 1$
 * $f(n) = n^2$
 * $f(n) = n^3$
