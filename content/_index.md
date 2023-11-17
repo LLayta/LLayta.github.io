@@ -2,7 +2,7 @@
 title: "Arduous"
 ---
 
-Hello, I am Layta. I am a 17 years old (as of 2023) and I am primarily interested in:
+Hello, I am Layta. I am 17 years old (as of 2023) and I am primarily interested in:
   * CS (computer science)
   * CS theory
   * Compilers
