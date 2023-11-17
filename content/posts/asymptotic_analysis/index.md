@@ -7,7 +7,7 @@ tags        : [Algorithms, CS, CS theory]
 ---
 
 ## Introduction
-This is a beginners introduction to learning about CS applications of asymptotic analysis. As you'll come to see, I leave out more complex topics, but are not vital to understanding the rudimentals of asymptotic analysis. I specifically left out masters theorem for calculating work functions for DAQ algorithms and recursive algorithms. In the examples, we won't use recurrence relations, the examples will be so simple that we can visually see what the work function would look like.
+This is a beginners introduction to learning about CS applications of asymptotic analysis. As you'll come to see, I leave out more complex topics, they're not vital to understanding the rudimentals of asymptotic analysis. I specifically left out masters theorem for calculating work functions for DAQ algorithms and recursive algorithms. In the examples, we won't use recurrence relations, the examples will be so simple that we can visually see what the work function would look like.
 
 However, you can find some resources here:
 * Masters theorem: https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)
