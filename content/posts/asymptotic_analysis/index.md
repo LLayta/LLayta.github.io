@@ -21,7 +21,7 @@ Here are some things you should know before jumping into this:
 
 * iff - If and only if. Further explanation here: https://www.youtube.com/watch?v=OK-ZAbcmmg0
 * Algorithm - Some set of steps utilized to solve a problem or task. In this post we'll model the work an algorithm does as a function known as $T(n)$.
-* Limits - Are concept that describes how functions inputs approach an output. Approach here means it describes the points that lead to the output, but not actually describing the output itself. Limits look like this:
+* Limits - Are a concept that describes how functions inputs approach an output. Approach here means it describes the points that lead to the output, but not actually describing the output itself. Limits look like this:
     $\lim_{x \to \infty}(x + 1)$.
     This describes how $x$ approaches $x + 1$.
 * Bounding functions - Are functions that cover the region above or below another functions graph. For example the function: $f(x) = x ^ 2$ is an upper bounding function to the function $g(x) = y$ because $f(x)$ grows faster than $g(x)$.
